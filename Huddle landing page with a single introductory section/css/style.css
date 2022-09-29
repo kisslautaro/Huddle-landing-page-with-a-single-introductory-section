@@ -1,0 +1,78 @@
+:root{
+    /* Colors */
+
+    --primaryViolet:hsl(257, 40%, 49%);
+    --primarySoftMagenta:hsl(300, 69%, 71%);
+
+
+    /* Font Headings */
+
+    --fontHeading:'Poppins', sans-serif;
+    --fontBody:'Open Sans', sans-serif;
+}
+
+/* Global */
+html{
+    box-sizing: border-box;
+    font-size:  62.5%;
+    height: 100%;
+    
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+
+}
+
+body{
+    height: 100vh;
+    background-color: var(--primaryViolet);
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    
+    
+    
+}
+
+
+.container{
+    height: 100vh;
+    
+}
+
+.logo{
+   margin-top: 6rem;    
+}
+
+.contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5.5rem;
+    padding: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.contain__right h1 ,p {
+    margin-left: 1.5rem;
+    color: white;
+}
+
+.contain__right h1{
+    
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: var(--fontHeading);
+    line-height: 1.5;
+}
+
+
+.contain__right p{
+    
+    font-size: 1.7rem;
+    font-family: var(--fontBody);
+    opacity: 85%;
+    line-height: 1.5;
+}
